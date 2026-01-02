@@ -1,0 +1,115 @@
+theme = "gruvbox_dark_soft"
+
+[editor]
+auto-format = true
+line-number = "relative"
+scroll-lines = 4
+bufferline = "multiple"
+soft-wrap.enable = true
+smart-tab.enable = false
+auto-completion = false
+true-color = true
+#rainbow-brackets = true
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.lsp]
+auto-signature-help = false
+display-inlay-hints = false
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 300000
+
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+
+]
+center = []
+right = [
+  "diagnostics",
+  "workspace-diagnostics",
+  "position",
+  "total-line-numbers",
+  "position-percentage",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+  "register",
+  "selections",
+]
+separator = "│"
+
+[keys.normal]
+s = "move_char_right"
+l = "select_regex"
+L = "split_selection"
+C-e = ["scroll_down", "scroll_down", "scroll_down", "scroll_down"]
+C-u = ["scroll_up", "scroll_up", "scroll_up", "scroll_up"]
+C-g = "goto_previous_buffer"
+C-l = "goto_next_buffer"
+H = ["collapse_selection", "select_mode", "goto_line_start", "normal_mode"]
+S = ["collapse_selection", "select_mode", "goto_line_end", "normal_mode"]
+C-s = "no_op"
+C-b = "save_selection"
+C-t = "copy_selection_on_next_line"
+C-r = "redo"
+C-d = ["extend_to_line_bounds", "delete_selection", "open_above"]
+Y = ["save_selection", "extend_to_line_bounds", "yank", "collapse_selection", "jump_backward"]
+D = ["extend_to_line_bounds", "delete_selection"]
+"%" = ["collapse_selection", "save_selection", "select_all"]
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.normal.g]
+l = "goto_line_end"
+s = "goto_line_end"
+
+[keys.select]
+s = "extend_char_right"
+l = "select_regex"
+C-e = ["scroll_down", "scroll_down", "scroll_down", "scroll_down"]
+C-u = ["scroll_up", "scroll_up", "scroll_up", "scroll_up"]
+C-g = "unindent"
+C-l = "indent"
+";" = ["collapse_selection", "normal_mode"]
+
+[keys.insert]
+C-g = "unindent"
+C-l = "indent"
+
+[keys.normal.space.w]
+s = "jump_view_right"
+C-s = "jump_view_right"
+l = "hsplit"
+C-l = "hsplit"
+S = "swap_view_right"
+L = "no_op"
+
+[keys.normal.C-w]
+s = "jump_view_right"
+C-s = "jump_view_right"
+l = "hsplit"
+C-l = "hsplit"
+S = "swap_view_right"
+L = "no_op"
