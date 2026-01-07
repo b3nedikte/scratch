@@ -12,28 +12,28 @@
 
 ## 📊 Overall Progress
 
-**Book Progress:** 0/21 chapters
-**Practical Exercises:** 0/10 completed
-**Major Projects:** 0/3 completed
+**Book Progress:** 12/21 chapters
+**Practical Exercises:** 8/10 completed
+**Major Projects:** 2/3 completed
 
 ---
 
 ## Phase 1: Core Fundamentals (Weeks 1-2)
 
 ### Chapter 1: Getting Started
-- [ ] Read chapter
-- [ ] Install Rust toolchain
-- [ ] Run `cargo new hello_world`
-- [ ] Verify setup with simple program
+- [x] Read chapter
+- [x] Install Rust toolchain
+- [x] Run `cargo new hello_world`
+- [x] Verify setup with simple program
 
 **Time estimate:** 1-2 hours
 
 ---
 
 ### Chapter 2: Guessing Game (Project 1/3)
-- [ ] Read chapter
-- [ ] Build the guessing game
-- [ ] Experiment with modifications
+- [x] Read chapter
+- [x] Build the guessing game
+- [x] Experiment with modifications
 
 **Concepts:** Basic I/O, random numbers, match statements, error handling intro
 
@@ -42,11 +42,11 @@
 ---
 
 ### Chapter 3: Common Programming Concepts
-- [ ] Read chapter
-- [ ] Practice: variables and mutability
-- [ ] Practice: data types
-- [ ] Practice: functions
-- [ ] Practice: control flow
+- [x] Read chapter
+- [x] Practice: variables and mutability
+- [x] Practice: data types
+- [x] Practice: functions
+- [x] Practice: control flow
 
 **C comparison notes:**
 - `let` vs `let mut` - explicit mutability (unlike C where everything is mutable by default)
@@ -59,9 +59,9 @@
 ---
 
 ### Chapter 4: Understanding Ownership ⭐ CRITICAL
-- [ ] Read chapter (read twice if needed!)
-- [ ] Complete all inline examples
-- [ ] Do Exercise 1 below
+- [x] Read chapter (read twice if needed!)
+- [x] Complete all inline examples
+- [x] Do Exercise 1 below
 
 **This is the biggest mental shift from C/C++. In C, you manage memory manually with malloc/free and pass pointers freely. Rust's ownership system prevents:**
 - Use-after-free (dangling pointers)
@@ -114,8 +114,8 @@ some_function(s); // Ownership moved
 ---
 
 ### Chapter 5: Structs
-- [ ] Read chapter
-- [ ] Do Exercise 2 below
+- [x] Read chapter
+- [x] Do Exercise 2 below
 
 #### Exercise 2: Structs and Methods
 **Goal:** Master Rust's struct system (similar to C structs + C++ methods)
@@ -172,8 +172,8 @@ impl MenuItem {
 ---
 
 ### Chapter 6: Enums and Pattern Matching
-- [ ] Read chapter
-- [ ] Do Exercise 3 below
+- [x] Read chapter
+- [x] Do Exercise 3 below
 
 #### Exercise 3: Enums and Pattern Matching
 **Goal:** Master Rust's powerful enums (way beyond C enums!)
@@ -242,8 +242,8 @@ enum UiElement {
 ## Phase 2: Collections & Error Handling (Week 3)
 
 ### Chapter 7: Packages, Crates, and Modules
-- [ ] Read chapter
-- [ ] Do Exercise 8 (Module Organization)
+- [x] Read chapter
+- [x] Do Exercise 8 (Module Organization)
 
 **Concepts:** Code organization, privacy, paths
 
@@ -252,8 +252,8 @@ enum UiElement {
 ---
 
 ### Chapter 8: Common Collections
-- [ ] Read chapter
-- [ ] Do Exercise 4 below
+- [x] Read chapter
+- [x] Do Exercise 4 below
 
 #### Exercise 4: Collections - Vec and HashMap
 **Goal:** Work with dynamic arrays and hash tables
@@ -289,8 +289,8 @@ Implement methods:
 ---
 
 ### Chapter 9: Error Handling
-- [ ] Read chapter
-- [ ] Do Exercise 5 below
+- [x] Read chapter
+- [x] Do Exercise 5 below
 
 #### Exercise 5: Error Handling
 **Goal:** Master Rust's `Result` type (no exceptions, no error codes!)
@@ -358,9 +358,9 @@ match menu.find_item("test") {
 ## Phase 3: Advanced Concepts (Week 4)
 
 ### Chapter 10: Generic Types, Traits, and Lifetimes ⭐
-- [ ] Read chapter (read twice if needed!)
-- [ ] Do Exercise 6 below
-- [ ] Do Exercise 7 below
+- [x] Read chapter (read twice if needed!)
+- [x] Do Exercise 6 below
+- [x] Do Exercise 7 below
 
 #### Exercise 6: Traits (Rust's Interfaces)
 **Goal:** Understand polymorphism without inheritance
@@ -552,9 +552,9 @@ use menu::MenuItem;
 ---
 
 ### Chapter 11: Testing
-- [ ] Read chapter
-- [ ] Add tests to previous exercises
-- [ ] Practice TDD workflow below
+- [x] Read chapter
+- [x] Add tests to previous exercises
+- [x] Practice TDD workflow below
 
 **Tasks:**
 - Write unit tests with `#[test]`
@@ -636,10 +636,10 @@ cargo test -- --nocapture  # show println! output
 ---
 
 ### Chapter 12: I/O Project - Building a grep Clone (Project 2/3)
-- [ ] Read chapter
-- [ ] Build the grep program
-- [ ] Refactor as suggested
-- [ ] Add tests
+- [x] Read chapter
+- [x] Build the grep program
+- [x] Refactor as suggested
+- [x] Add tests
 
 **Concepts:** File I/O, command-line args, error handling, testing
 
@@ -1261,7 +1261,7 @@ impl EmbeddedMenu {
 
 ## 🎯 Key Milestones
 
-- [ ] **Milestone 1:** Understand ownership (can explain to someone else)
+- [x] **Milestone 1:** Understand ownership (can explain to someone else)
 - [ ] **Milestone 2:** Can write and use traits
 - [ ] **Milestone 3:** Completed all 3 book projects
 - [ ] **Milestone 4:** First GUI window displays
