@@ -3,7 +3,7 @@ use std::fmt;
 #[derive(Debug)]
 pub struct MenuItem {
     pub name: String,
-    enabled: bool,
+    pub enabled: bool,
     position: i32,
 }
 

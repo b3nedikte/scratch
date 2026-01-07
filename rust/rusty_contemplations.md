@@ -1,5 +1,8 @@
 # Rust Mastery Program - Book + Touch GUI Development
 
+where rusty contemplations stands for
+> reflections that are careful, constrained, safety-aware, and structurally rigorous.
+
 **Goal:** Master Rust fundamentals through The Rust Book while building toward a touchscreen GUI application
 
 **Background:** Strong C experience, Python experience, some C++ experience
@@ -12,8 +15,8 @@
 
 ## 📊 Overall Progress
 
-**Book Progress:** 12/21 chapters
-**Practical Exercises:** 8/10 completed
+**Book Progress:** 13/21 chapters
+**Practical Exercises:** 9/10 completed
 **Major Projects:** 2/3 completed
 
 ---
@@ -650,10 +653,10 @@ cargo test -- --nocapture  # show println! output
 ## Phase 4: Advanced Features (Week 5)
 
 ### Chapter 13: Functional Language Features
-- [ ] Read chapter
-- [ ] Practice: closures
-- [ ] Practice: iterators
-- [ ] Do Exercise 13A below
+- [x] Read chapter
+- [x] Practice: closures
+- [x] Practice: iterators
+- [x] Do Exercise 13A below
 
 **Time estimate:** 3-4 hours
 

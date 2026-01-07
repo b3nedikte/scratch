@@ -6,6 +6,38 @@ pub struct ScrollList<T> {
 }
 
 impl<T> ScrollList<T> {
+    // filter item with a closure
+    pub fn filter<F>(&self, predicate: F) -> Vec<&T>
+    where
+        F: Fn(&T) -> bool,
+    {
+        self.items.iter().filter(|item| predicate(item)).collect()
+    }
+
+    //map items with a closure
+    pub fn map<F, U>(&self, f: F) -> Vec<U>
+    where
+        F: Fn(&T) -> U,
+    {
+        self.items.iter().map(f).collect()
+    }
+
+    // find first item matching predicate
+    pub fn find<F>(&self, predicate: F) -> Option<&T>
+    where
+        F: Fn(&T) -> bool,
+    {
+        self.items.iter().find(|item| predicate(item))
+    }
+
+    // use closures
+    pub fn sort_by<F>(&mut self, compare: F)
+    where
+        F: FnMut(&T, &T) -> std::cmp::Ordering,
+    {
+        self.items.sort_by(compare);
+    }
+
     pub fn new(visible_count: usize) -> Self {
         ScrollList {
             items: Vec::new(),
@@ -54,9 +86,9 @@ where
     T: std::fmt::Display + Clone + std::fmt::Debug,
 {
     pub fn display_visible(&self) {
-        for item in self.get_visible() {
-            println!("{}", item);
-        }
+        self.get_visible()
+            .iter()
+            .for_each(|item| println!("{}", item));
     }
 }
 

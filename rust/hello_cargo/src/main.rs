@@ -94,4 +94,7 @@ fn main() {
     stringlist.display_visible();
     stringlist.scroll_up();
     stringlist.display_visible();
+
+    let enabled_items = menulist.filter(|item| item.enabled);
+    let names = menulist.map(|item| item.name.clone());
 }
