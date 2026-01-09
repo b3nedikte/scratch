@@ -15,7 +15,7 @@ where rusty contemplations stands for
 
 ## 📊 Overall Progress
 
-**Book Progress:** 13/21 chapters
+**Book Progress:** 15/21 chapters
 **Practical Exercises:** 9/10 completed
 **Major Projects:** 2/3 completed
 
@@ -732,18 +732,18 @@ where
 ---
 
 ### Chapter 14: More About Cargo
-- [ ] Read chapter
-- [ ] Set up workspace
-- [ ] Practice: profiles, dependencies
+- [x] Read chapter
+- [x] Set up workspace
+- [x] Practice: profiles, dependencies
 
 **Time estimate:** 1-2 hours
 
 ---
 
 ### Chapter 15: Smart Pointers
-- [ ] Read chapter
-- [ ] Practice: `Box<T>`
-- [ ] Practice: `Rc<T>` and `RefCell<T>`
+- [x] Read chapter
+- [x] Practice: `Box<T>`
+- [x] Practice: `Rc<T>` and `RefCell<T>`
 - [ ] Do Exercise 15A below
 
 **Concepts:** Heap allocation, reference counting, interior mutability
