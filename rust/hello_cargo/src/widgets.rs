@@ -1,3 +1,6 @@
+use crate::theme::Theme;
+use std::rc::Rc;
+
 pub trait Touchable {
     // pub to be used from main.rs
     fn on_touch(&mut self, x: f32, y: f32) -> bool;
@@ -8,6 +11,9 @@ pub trait Touchable {
         let (bx, by, width, height) = self.get_bounds();
         x >= bx && x <= bx + width && y >= by && y <= by + height
     }
+
+    fn get_theme(&self) -> Rc<Theme>;
+    fn get_label(&self) -> String;
 }
 
 pub struct Button {
@@ -17,6 +23,7 @@ pub struct Button {
     pub y: f32,
     pub width: f32,
     pub height: f32,
+    pub theme: Rc<Theme>,
 }
 
 impl Touchable for Button {
@@ -30,6 +37,14 @@ impl Touchable for Button {
     fn get_bounds(&self) -> (f32, f32, f32, f32) {
         (self.x, self.y, self.width, self.height)
     }
+
+    fn get_theme(&self) -> Rc<Theme> {
+        Rc::clone(&self.theme)
+    }
+
+    fn get_label(&self) -> String {
+        self.label.clone()
+    }
 }
 
 pub struct Checkbox {
@@ -37,6 +52,7 @@ pub struct Checkbox {
     pub y: f32,
     pub size: f32,
     pub checked: bool,
+    pub theme: Rc<Theme>,
 }
 
 impl Touchable for Checkbox {
@@ -50,6 +66,14 @@ impl Touchable for Checkbox {
     fn get_bounds(&self) -> (f32, f32, f32, f32) {
         (self.x, self.y, self.size, self.size) // size*size is a square
     }
+
+    fn get_theme(&self) -> Rc<Theme> {
+        Rc::clone(&self.theme)
+    }
+
+    fn get_label(&self) -> String {
+        "checkbox".to_string()
+    }
 }
 
 pub struct Slider {
@@ -58,6 +82,7 @@ pub struct Slider {
     pub width: f32,
     pub height: f32,
     pub value: f32,
+    pub theme: Rc<Theme>,
 }
 
 impl Touchable for Slider {
@@ -70,5 +95,13 @@ impl Touchable for Slider {
 
     fn get_bounds(&self) -> (f32, f32, f32, f32) {
         (self.x, self.y, self.width, self.height)
+    }
+
+    fn get_theme(&self) -> Rc<Theme> {
+        Rc::clone(&self.theme)
+    }
+
+    fn get_label(&self) -> String {
+        "slider".to_string()
     }
 }

@@ -16,7 +16,7 @@ where rusty contemplations stands for
 ## 📊 Overall Progress
 
 **Book Progress:** 15/21 chapters
-**Practical Exercises:** 9/10 completed
+**Practical Exercises:** 10/10 completed
 **Major Projects:** 2/3 completed
 
 ---
@@ -744,7 +744,7 @@ where
 - [x] Read chapter
 - [x] Practice: `Box<T>`
 - [x] Practice: `Rc<T>` and `RefCell<T>`
-- [ ] Do Exercise 15A below
+- [x] Do Exercise 15A below
 
 **Concepts:** Heap allocation, reference counting, interior mutability
 
