@@ -15,7 +15,7 @@ where rusty contemplations stands for
 
 ## 📊 Overall Progress
 
-**Book Progress:** 15/21 chapters
+**Book Progress:** 16/21 chapters
 **Practical Exercises:** 10/10 completed
 **Major Projects:** 2/3 completed
 
@@ -890,12 +890,43 @@ impl ScoreButton {
 ---
 
 ### Chapter 16: Fearless Concurrency
-- [ ] Read chapter
-- [ ] Practice: threads
-- [ ] Practice: channels
-- [ ] Practice: `Arc<Mutex<T>>`
+- [x] Read chapter
+- [x] Practice: threads
+- [x] Practice: channels
+- [x] Practice: `Arc<Mutex<T>>`
+- [ ] Do Exercise 16A below
 
 **Time estimate:** 3-4 hours
+
+---
+
+#### Exercise 16A: Deadlocks and Mitigation
+**Goal:** Understand deadlocks and learn prevention strategies
+
+**File:** `deadlock_exercises.md`
+
+**Tasks:**
+1. **Create a deadlock** - Two threads locking resources in opposite order
+2. **Fix with lock ordering** - Always acquire locks in same order (A→B)
+3. **Use try_lock()** - Non-blocking attempt with backoff and retry
+4. **Minimize lock scope** - Clone data, release lock, then do slow work
+5. **Use channels** - Replace shared state with message passing
+
+**Key concepts:**
+- `Arc<Mutex<T>>` for shared state across threads
+- `try_lock()` vs `lock()`
+- `mpsc::channel()` for message passing
+- Lock contention and performance
+
+**When to use what:**
+| Pattern | Use when |
+|---------|----------|
+| `Mutex<T>` | Single-threaded or simple cases |
+| `Arc<Mutex<T>>` | Multi-threaded shared state |
+| `RwLock<T>` | Many readers, few writers |
+| Channels | Avoid shared state entirely |
+
+**Time estimate:** 2-3 hours
 
 ---
 
