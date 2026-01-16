@@ -15,7 +15,7 @@ where rusty contemplations stands for
 
 ## 📊 Overall Progress
 
-**Book Progress:** 16/21 chapters
+**Book Progress:** 17/21 chapters
 **Practical Exercises:** 10/10 completed
 **Major Projects:** 2/3 completed
 
@@ -931,9 +931,9 @@ impl ScoreButton {
 ---
 
 ### Chapter 17: Async and Await
-- [ ] Read chapter
-- [ ] Practice: async functions
-- [ ] Practice: futures
+- [x] Read chapter
+- [x] Practice: async functions
+- [x] Practice: futures
 
 **Time estimate:** 2-3 hours
 

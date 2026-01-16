@@ -299,6 +299,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "hello-async"
+version = "0.1.0"
+dependencies = [
+ "trpl",
+]
+
+[[package]]
 name = "html5ever"
 version = "0.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1278,13 +1285,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
-]
-
-[[package]]
-name = "thread"
-version = "0.1.0"
-dependencies = [
- "trpl",
 ]
 
 [[package]]
